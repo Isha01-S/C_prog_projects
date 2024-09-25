@@ -10,7 +10,7 @@ int lives =5;
 srand(time(NULL));
 
 printf("\n!!Welcome To Number Guessing Game!!\n");
-rNumber =rand() * 20 + 1;//generating between 0 to 20.
+rNumber =(rand() % 20 + 1);//generating between 0 to 20.
 
 do {
 printf("lives remaining : %d\n",lives);
@@ -36,8 +36,10 @@ break;
 }
 while (guess != rNumber);
 
-printf("\n!!!Thanks For Playing!!!\n");
+printf("\nThe Number is : %d\n", rNumber);
 
-printf("\nDeveloped BY - ISHA SRIWASTAV\n");
+printf("\n !!!Thanks For Playing!!! \n");
+
+printf("\n Developed BY - ISHA SRIWASTAV \n");
 return 0;
 }
